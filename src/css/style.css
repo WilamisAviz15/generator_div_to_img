@@ -8,6 +8,12 @@
   display: flex;
 }
 
+/* .divisor__image {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4D0BAQFa__yr9SnhHw/company-logo_200_200/0/1618499057213?e=2159024400&v=beta&t=IeGAnh6VCqw_KrbbafQE7rR_dx9EXIuAEB-cZHxExTA");
+  background-size: 299px 300px;
+  background-repeat: no-repeat;
+} */
+
 .divisor__background {
   width: 100%;
   background-color: #11325f;

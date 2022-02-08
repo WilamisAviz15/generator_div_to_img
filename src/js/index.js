@@ -1,11 +1,17 @@
 window.onload = function(){
-  // var node = document.getElementById('divisor');
-  var btn = document.getElementById('btn-download');
-
-  btn.onclick = function() {
-    domtoimage.toBlob(document.getElementById('divisor'))
-      .then(function(blob) {
-        window.saveAs(blob, 'img.png');
-      });
-  }
+  $("#btn-download").on("click", function () {
+    html2canvas(document.getElementById("divisor"), {
+      allowTaint: true,
+      useCORS: true,
+    }).then(function (canvas) {
+      var anchorTag = document.createElement("a");
+      document.body.appendChild(anchorTag);
+      document.getElementById("previewImg").appendChild(canvas);
+      anchorTag.download = "filename.jpg";
+      anchorTag.href = canvas.toDataURL();
+      anchorTag.target = "_blank";
+      anchorTag.click();
+    });
+  });
+  
 }
