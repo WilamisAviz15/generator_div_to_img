@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.divisor {
+  display: flex;
+}
+
+.divisor__background {
+  width: 100%;
+  background-color: #11325f;
+  background-image: linear-gradient(
+    to top right,
+    transparent,
+    rgba(255, 255, 255, 0.17)
+  );
+}
+
+.divisor__background__content {
+  display: block;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.divisor__background__address_site {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.divisor__background__name {
+  display: flex;
+  width: 100%;
+  color: #40c2ff;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.divisor__background__info1 {
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.divisor__background__info2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+.divisor__background__contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.divisor__background__contact-mail {
+  padding-right: 25px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.divisor__background__contact-tel {
+  font-size: 22px;
+  color: #fff;
+}
+
+.divisor__background__contact-i-mail {
+  padding-right: 10px;
+}
+
+.divisor__background__contact-i-tel {
+  padding-right: 10px;
+}
